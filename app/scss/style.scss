@@ -1,0 +1,68 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+@import 'libs';
+
+.header {
+  padding: 45px 15px;
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+.menu {
+  // для того чтобы выстроить нав по макету
+  margin-left: 100px;
+  z-index: 1;
+  &--active {
+    overflow-y: scroll;
+    transform: translateY(0);
+  }
+
+  &__list {
+    display: flex;
+
+    &--active {
+      flex-direction: column;
+    }
+  }
+
+  &__link {
+    font-size: 15px;
+    line-height: 1.1;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s;
+
+    &:hover {
+      border-color: #fff;
+    }
+  }
+
+  &__item {
+    &+& {
+      margin-left: 35px;
+    }
+
+    &--active {
+      &+& {
+        margin-left: 0;
+        margin-top: 50px;
+      }
+
+      .menu__link {
+        font-size: 24px;
+
+        &:hover {
+          color: #fff;
+          border-color: #fff;
+        }
+      }
+    }
+  }
+}
+
+
+@import 'media';
