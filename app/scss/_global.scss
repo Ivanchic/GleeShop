@@ -1,6 +1,18 @@
+html,
 body {
+  background-color: #fff;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  @extend %rubik-400;
   font-size: 16px;
-  line-height: 26px;
+  font-style: normal;
+  color: $default;
+  line-height: 1.8;
 }
 
 .main {
@@ -9,6 +21,32 @@ body {
 
 .container {
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+
+  &--lg {
+    max-width: 1800px;
+  }
+}
+.main {
+  &__title {
+    font-size: 0;
+  }
+}
+.title {
+  margin-bottom: 10px;
+  @extend %dmsans-700;
+  font-size: 36px;
+  color: $title;
+  text-align: center;
+  &--main {
+    font-size: 0;
+  }
+}
+
+.text-nowrap {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
