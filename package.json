@@ -17,16 +17,24 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
+    "ion-rangeslider": "^2.3.1",
     "jquery": "^3.7.1",
+    "jquery-form-styler": "^2.0.2",
+    "mixitup": "^3.3.2",
+    "rangeslider-js": "^3.2.5",
+    "rateyo": "^2.3.2",
     "sass": "^1.77.8",
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "@fancyapps/ui": "^5.0.36",
     "autoprefixer": "^9.8.8",
     "gulp-require": "^0.1.4",
     "gulp-v4": "^4.0.0-alpha.5",
     "imagemin-gifsicle": "^7.0.0",
     "node.js": "^0.0.1-security",
+    "range-slider-input": "^2.4.4",
     "slick": "^1.12.2"
   },
   "description": ""

@@ -28,7 +28,7 @@
   font-weight: 400;
 }
 
-.terms h2, .top-slider .slick-dots button, .top-slider .button, .top-slider__title, .menu__link, .button {
+.login, .terms h2, .top-slider .slick-dots button, .top-slider .button, .top-slider__title, .menu__link, .button {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
 }
@@ -1268,4 +1268,23 @@ body {
 }
 .terms p {
   margin-bottom: 60px;
+}
+
+.login {
+  padding: 110px 10px 120px;
+  color: #243f4d;
+}
+.login__text {
+  display: block;
+  margin: 25px 0 20px;
+  text-align: center;
+}
+.login__register-link {
+  display: block;
+  padding: 15px 0;
+  border: 1px solid #243f4d;
+  color: #243f4d;
+  text-align: center;
+  max-width: 470px;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
