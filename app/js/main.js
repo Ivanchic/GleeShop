@@ -7,6 +7,16 @@ $ (function () {
     $(".menu__item").toggleClass("menu__item--active");
   });
 
+   $(".button-list").on("click", function () {
+     $(".product-card").addClass("product-card__item-list");
+   });
+   $(".button-grid").on("click", function () {
+     $(".product-card").removeClass("product-card__item-list");
+   });
+
+
+  $(".select-style").styler();
+ 
 
   $(".top-slider__slider").slick({
     dots: true,
@@ -15,6 +25,7 @@ $ (function () {
     autoplay: true,
     autoplaySpead: 10000,
   });
+
 
   $(".catalog__filters-btn").on("click", function () {
     $(".catalog__filters").toggleClass("catalog__filters--active");
@@ -42,6 +53,16 @@ $ (function () {
     ratefFill: "#ffc35b",
     readOnly: true
   });
+
+
+   
+  $(".shop-content__filter-btn").on("click", function () {
+     $(".shop-content__filter-btn").removeClass(
+       "shop-content__filter-btn--active"
+     );
+     $(this).addClass("shop-content__filter-btn--active");
+   
+    });
 
   
 });

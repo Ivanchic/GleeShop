@@ -16,18 +16,20 @@ function browsersync() {
   });
 }
 
-async function styles() {
+function styles() {
   return src("app/scss/style.scss")
     .pipe(scss({ outputStyle: "compressed" }))
-    .pipe(concat("style.min.css"))
+    .pipe(concat("styles.min.css"))
     .pipe(
       autoprefixer({
         overrideBrowserslist: ["last 10 versions"],
         grid: true,
       })
     )
-    .pipe(dest("app/css"));
-}
+    .pipe(dest("app/css"))
+    .pipe(browserSync.stream());
+};
+
 
 const scripts = () => {
   return src([
@@ -36,6 +38,7 @@ const scripts = () => {
     "node_modules/mixitup/dist/mixitup.js",
     "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js",
     "node_modules/rateyo/src/jquery.rateyo.js",
+    "node_modules/jquery-form-styler/dist/jquery.formstyler.js",
     "node_modules/ion-rangeslider/js/ion.rangeSlider.js",
 
     "app/js/main.js",
