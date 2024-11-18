@@ -649,6 +649,10 @@
   border-radius: 10px;
   width: 270px;
   margin-bottom: 30px;
+  text-align: center;
+  &.product-card__item-list{
+    min-width: 100%;
+  }
   &:hover {
     .product-card__icon-list {
       opacity: 1;
@@ -1493,29 +1497,43 @@
           }
         }
       }
+
+      .select-style{
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        border: none;
+        outline: none;
+      }
+      
+      .jq-selectbox__select{
+        position: relative;
+        height: 32px;
+        display: inline-block;
+        margin-left: 30px;
+        padding: 0 30px 0 0;
+        border: none;
+        background: transparent;
+        box-shadow: none;
+        
+      }
+      .jq-selectbox__trigger {
+        border-left: none;
+      }
+      
+      .jq-selectbox__trigger-arrow {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 10px;
+        height: 5px;
+        border: none;
+        background-image: url(../images/icons/angle-down.png);
+      }
     }
 
-.jq-selectbox__select{
-  height: 32px;
-  margin-left: 30px;
-  padding: 0 30px 0 0;
-  border: none;
-  background: transparent;
-  box-shadow: none;
 
-}
-.jq-selectbox__trigger {
-  border-left: none;
-}
 
-.jq-selectbox__trigger-arrow {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 10px;
-  height: 5px;
-  border: none;
-  background-image: url(../images/icons/angle-down.png);
-}
+
 
 @import 'media';

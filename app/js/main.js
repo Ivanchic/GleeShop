@@ -34,6 +34,7 @@ $ (function () {
     $(".catalog__filters").toggleClass("catalog__filters--active");
   });
 
+
   $('.filter__range-input').ionRangeSlider({
     type: "double",
     prefix: "$",
@@ -48,7 +49,7 @@ $ (function () {
   });
 
   $(".filter__recent-star").rateYo({
-    starWidth: "17px",
+    starWidth: "15px",
     normalFill: "#ccccce",
     ratefFill: "#ffc35b",
     readOnly: true

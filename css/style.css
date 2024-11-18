@@ -153,6 +153,15 @@ select {
   font: inherit;
 }
 
+select {
+  font: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
 html,
 body {
   background-color: #fff;
@@ -3228,6 +3237,10 @@ input[type=submit].styler[disabled] {
   border-radius: 10px;
   width: 270px;
   margin-bottom: 30px;
+  text-align: center;
+}
+.product-card.product-card__item-list {
+  min-width: 100%;
 }
 .product-card:hover .product-card__icon-list {
   opacity: 1;
@@ -3956,21 +3969,27 @@ input[type=submit].styler[disabled] {
 .shop-content__filter-btn.shop-content__filter-btn--active path {
   fill: #243f4d;
 }
-
-.jq-selectbox__select {
+.shop-content .select-style {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+}
+.shop-content .jq-selectbox__select {
+  position: relative;
   height: 32px;
+  display: inline-block;
   margin-left: 30px;
   padding: 0 30px 0 0;
   border: none;
   background: transparent;
   box-shadow: none;
 }
-
-.jq-selectbox__trigger {
+.shop-content .jq-selectbox__trigger {
   border-left: none;
 }
-
-.jq-selectbox__trigger-arrow {
+.shop-content .jq-selectbox__trigger-arrow {
   position: absolute;
   top: 12px;
   right: 12px;
