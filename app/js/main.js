@@ -48,12 +48,25 @@ $ (function () {
     },
   });
 
-  $(".filter__recent-star").rateYo({
+  $(".filter__recent-star, .product-details__star").rateYo({
     starWidth: "15px",
     normalFill: "#ccccce",
     ratefFill: "#ffc35b",
-    readOnly: true
+    readOnly: true,
   });
+
+   $(".product-details__meter--minus").on("click", () => {
+     let counter = $(".product-details__meter");
+     let newValue = Number(counter.val()) - 1;
+     newValue > 0 && counter.val(newValue);
+   });
+
+   $(".product-details__meter--plus").on("click", () => {
+     let counter = $(".product-details__meter");
+     let newValue = Number(counter.val()) + 1;
+     counter.val(newValue);
+   });
+
 
 
    

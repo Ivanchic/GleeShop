@@ -64,8 +64,248 @@
 
   <main class="main">
     
+<div class="top">
+      <div class="top__inner">
+        <h2 class="top__title">
+          Details
+        </h2>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Product Details</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+<section class="product-details">
+        <div class="container">
+            <div class="product-details__inner">
+                <div class="product-details__img-wrap">
+                    <div class="product-details__wrap">
+                        <img
+                            class="product-details__img"
+                            src="images/product-details/1.png"
+                            alt="Pendant lamp"
+                        />
+                    </div>
+                    <div class="product-details__wrap product-details__wrap--big">
+                        <img
+                            class="product-details__img"
+                            src="images/product-details/4.png"
+                            alt="Pendant lamp"
+                        />
+                    </div>
+                    <div class="product-details__wrap">
+                        <img
+                            class="product-details__img"
+                            src="images/product-details/2.png"
+                            alt="Pendant lamp"
+                        />
+                    </div>
+                    <div class="product-details__wrap">
+                        <img
+                            class="product-details__img"
+                            src="images/product-details/3.png"
+                            alt="Pendant lamp"
+                        />
+                    </div>
+                </div>
+                <div class="product-details__info">
+                    <h2 class="product-details__title">Pendant lamp</h2>
+                    <div class="product-details__star" data-rateyo-rating="4"></div>
+                    <span class="product-details__price">23 <span>$</span></span>
+                    <p class="product-details__text">
+                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                       
+                    </p>
+                    <div class="product-details__navigation">
+                        <form class="product-details__form">
+                            <div class="product-details__counter">
+                                <label for="product-counter" class="visually-hidden">
+                                    
+                                </label>
+                                <button
+                                    class="product-details__meter product-details__meter--minus"
+                                    type="button"
+                                >
+                                    -
+                                </button>
+                                <input
+                                    class="product-details__meter product-details__meter--input"
+                                    id="product-counter"
+                                    min="1"
+                                    value="1"
+                                    name="counter[number]"
+                                    type="number"
+                                />
+                                <button
+                                    class="product-details__meter product-details__meter--plus"
+                                    type="button"
+                                >
+                                    +
+                                </button>
+                            </div>
+                            <button class="form-btn product-details__button" type="submit">
+                                Add to cart
+                            </button>
+                        </form>
+                    </div>
+                    <ul class="product-details__items">
+                        <li class="product-details__item">SKU: 014</li>
+                        <li class="product-details__item">Category: Lights</li>
+                        <li class="product-details__item">Tag: Decorative</li>
+                    </ul>
+                </div>
+            </div>
 
+            <div class="product-description">
+                <ul class="product-description__navigation">
+                    <li class="product-description__button">
+                        <button
+                            class="product-description__btn product-description__btn--descr active"
+                            type="button"
+                        >
+                            Description
+                        </button>
+                    </li>
+                    <li class="product-description__button">
+                        <button
+                            class="product-description__btn product-description__btn--info"
+                            type="button"
+                        >
+                            Additional information
+                        </button>
+                    </li>
+                    <li class="product-description__button">
+                        <button
+                            class="product-description__btn product-description__btn--reviews"
+                            type="button"
+                        >
+                            Reviews (2)
+                        </button>
+                    </li>
+                </ul>
+                <ul class="product-description__items">
+                    <li class="product-description__item product-description__item--descr active">
+                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </li>
+                    <li class="product-description__item product-description__item--info">
+                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    </li>
+                    <li class="product-description__item product-description__item--reviews">
+                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </li>
+                </ul>
+            </div>
 
+            <div class="product-related">
+                <h2 class='product-related__title'>Related products</h2>
+               <div class="catalog__cards">
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/1.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/2.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/3.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+              <article class="catalog__card product-card mix category-a">
+                <div class="product-card__icon-list">
+                  <a class="product-card__icon product-card__icon--search" href="#">Details
+                  </a>
+                  <button class="product-card__icon
+                  product-card__icon--cart">Add to cart
+                  </button>
+                  <button class="product-card__icon product-card__icon--like">
+                    Add to wishlist
+                  </button>
+                </div>
+                <img class="product-card__img" src="images/featured/4.png" alt="product image">
+                <div class="product-card__descr">
+                  <h3 class="product-card__title">
+                    Wooden radio
+                  </h3>
+                  <span class="product-card__price">
+                    $29.00
+                  </span>
+                </div>
+              </article>
+             
+          
+            
+            </div>
+            </div>
+        </div>
+    </section>
 
       <section class="blog">
       <div class="container">
