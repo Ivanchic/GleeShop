@@ -1772,4 +1772,232 @@
   }
 }
 
+.blog-page{
+  
+  &__inner{
+    display: flex;
+    margin-top: 120px;
+  }
+  &__content{
+    padding-right: 30px;
+  }
+  &__item{
+    position: relative;
+    margin-bottom: 40px;
+  }
+  &__img{
+    margin-bottom: 40px;
+  }
+
+  &__item-link{
+    padding-top: 40px;
+    font-size: 36px;
+    margin-bottom: 35px;
+    color: $title;
+  }
+  &__item-text{
+    margin-bottom: 40px;
+    width: 800px;
+    color: $title;
+    line-height: 2;
+  }
+  &__item-title{
+    margin-bottom: 35px;
+  }
+
+}
+.blog-box{
+position: absolute;
+display: flex;
+left: 0;
+bottom: 341px;
+background-color: #a3bbc8;
+color: white;
+justify-content: space-around;
+padding: 30px 0;
+width: 275px;
+font-size: 12px;
+border-radius: 0 50px 0 0;
+  &__author{
+    color: #fff;
+  }
+}
+.filter-search__btn{
+  border: none;
+  color: $link;
+  padding: 13px;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  justify-content: center;
+  outline: transparent;
+
+  cursor: pointer;
+}
+.filter-search__input{
+  border: 1px solid $link;
+  padding: 5px 10px;
+  border-radius: 5px 0 0 5px;
+  width: 225px;
+
+}
+.filter-search__form{
+  display: flex;
+  padding-bottom: 60px;
+}
+
+.contact{
+  padding-top: 120px;
+  min-width: 1200px;
+}
+.contact__text{
+    display: block;
+    color: #a3bbc8;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+.contact__title{
+    font-size: 35px;
+    color: #436372;
+    text-align: center;
+  }
+  .location{
+    width: 31px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+
+.contact__list{
+  padding: 60px 0 120px;
+  display: flex;
+}
+.contact__item{
+  display: flex;
+  padding: 7% 4%;
+  margin-right: 30px;
+  background-color: #fbfbfb;
+  max-width: 370px;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid transparent;
+  transition: .5s;
+}
+.contact__icon{
+  width: 80px;
+  height: 80px;
+  display: flex;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+  margin-bottom: 60px;
+  transition: .5s;
+  justify-content: center;
+  align-items: center;
+}
+.contact__icon--active{
+  color: $accent;
+}
+.contact__info{
+  color: $title;
+  font-size: 25px;
+  text-align: center;
+  font-style: normal;
+  line-height: 2;
+  min-width: 270px;
+  &__text{
+    font-size: 20px;
+  }
+}
+.contact__item--active{
+  border-color: $accent;
+}
+.contact-form{
+  display: flex;
+  border-color: transparent;
+  padding-bottom: 0;
+  border-radius: 3px;
+}
+.leave-comments{
+  display: flex;
+  flex-wrap: wrap;
+}
+.leave-comments__input--name{
+  width: 48%;
+  margin-bottom: 20px;
+  position: relative;
+  margin-right: 23px;
+}
+.leave-comments__input--name::after{
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-image: url(/images/icons/user.png);
+  top: 10px;
+  right: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.leave-comments__input{
+  background-color: #fbfbfb;
+  padding: 10px 35px 10px 15px;
+  border: 2px solid #e5e5e5;
+  outline: transparent;
+  width: 100%;
+}
+.leave-comments__input--mail{
+  width: 48%;
+  margin-bottom: 20px;
+  position: relative;
+}
+.leave-comments__input--mail:after{
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-image: url(/images/icons/mail-comment.png);
+  background-position: center;
+  content: "";
+      }
+
+.leave-comments__input--comment{
+  width: 100%;
+  margin-bottom: 40px;
+  position: relative;
+}
+.leave-comments__input--comment::after{
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-image: url(/images/icons/comments.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.leave-comments__btn{
+  padding: 2% 5%;
+  background-color: #a3bbc8;
+  color: white;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: .3s;
+  text-transform: uppercase;
+}
+.contact__map {
+  margin-left: 50px;
+}
+.contact__map-config {
+  width: 515px;
+  height: 326px;
+}
 @import 'media';

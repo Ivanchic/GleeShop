@@ -15,11 +15,10 @@ function browsersync() {
     notify: false,
   });
 }
-
 function styles() {
   return src("app/scss/style.scss")
     .pipe(scss({ outputStyle: "compressed" }))
-    .pipe(concat("styles.min.css"))
+    .pipe(concat("style.min.css"))
     .pipe(
       autoprefixer({
         overrideBrowserslist: ["last 10 versions"],
