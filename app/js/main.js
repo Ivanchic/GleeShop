@@ -1,11 +1,8 @@
 $ (function () {
 
-  $(".menu__btn, .menu a").on("click", function () {
-    $(".menu__btn").toggleClass("menu__btn--active");
-    $(".menu").toggleClass("menu--active");
-    $(".menu__list").toggleClass("menu__list--active");
-    $(".menu__item").toggleClass("menu__item--active");
-  });
+   $(".menu__btn").on("click", function () {
+     $(".menu__list").toggleClass("menu__list--active");
+   });
 
    $(".button-list").on("click", function () {
      $(".product-card").addClass("product-card__item-list");
