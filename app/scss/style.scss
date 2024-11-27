@@ -25,8 +25,8 @@
     
   }
   &__btn{
-    display: none;
-  }
+  display: none;
+ }
 
   &__link {
     @extend %rubik-500;
@@ -155,20 +155,7 @@
   }
 }
 
-.menu__btn {
-  width: 50px;
-  height: 50px;
-  padding: 0;
-  border: none;
-  background: none;
-  position: relative;
-  outline: transparent;
-  cursor: pointer;
-  display: none;
-  z-index: 2;
 
-
-}
 
 // .menu__btn-line,
 // .menu__btn-line::before,
@@ -382,25 +369,10 @@
     padding: 100px 15px 85px;
     display: flex;
     align-items: center;
-    min-height: 820px;
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      background-image: url("../../images/slider/slider-round-bg.png");
-      background-repeat: no-repeat;
-      right: 70px;
-      top: 531px;
-      height: 80%;
-      width: 80%;
-      z-index: 1;
-
-    }
   }
 
   &__content {
-    max-width: 470px;
-    margin-right: 60px;
+    padding: 215px 0 206px;
 
   }
 
@@ -426,13 +398,14 @@
 
   &__img {
     display: block;
-    margin-right: -115px;
     max-width: 615px;
     max-height: 615px;
   }
     .button {
-      padding: 25px 100px 25px 30px;
+      padding: 25px 21px 25px 30px;
       @extend %rubik-500;
+      display: flex;
+      align-items: center;
       font-size: 15px;
       line-height: 0.9;
       color: #fff;
@@ -448,6 +421,7 @@
           transform: translateX(5px);
         }
       }
+      
   
       &--light {
         color: #436372;
@@ -469,6 +443,15 @@
           filter: invert(35%) sepia(23%) saturate(684%) hue-rotate(154deg) brightness(93%) contrast(84%);
         }
       }
+    }
+  .button-arrow{
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .s-right-arrow {
+    width: 22px;
+    height: 9px;
     }
 
   .slick-dots {
@@ -553,12 +536,15 @@
     }
     &--support::before {
       background-image: url('../images/icons/24-7.png');
+      
     }
     &--delivery::before {
       background-image: url('../images/icons/delivery-truck.png');
+      
     }
     &--payment::before {
       background-image: url('../images/icons/credit-card.png');
+     
     }
   }
 
@@ -2189,10 +2175,14 @@ border-radius: 0 50px 0 0;
     justify-content: flex-end;
     margin-top: 15px;
   }
+  .button-header{
+    margin: 0 auto;
+  }
   .top-slider{
     padding: 0;
   }
   .top-slider__inner{
+   padding: 0;
    flex-direction: column;
    justify-content: center;
    margin-bottom: 45px;
@@ -2225,7 +2215,7 @@ border-radius: 0 50px 0 0;
   .new-design__content{
     display: grid;
     grid-gap: 30px 30px;
-    margin-left: 80px;
+    margin: 0px 80px 0px;
     grid-template-columns: repeat(2, 1fr);
   }
   .blog__cards{
@@ -2307,6 +2297,69 @@ border-radius: 0 50px 0 0;
 .header__inner {
   display: flex;
   }
+ .top-slider__content {
+   padding: 100px 0 50px;
+ }
+ .top-slider__text{
+  margin-left: 10px;
+ }
+.top-slider__img{
+  background-size: contain;
+  width: 400px;
+  padding-bottom: 10px;
+}
+.services__info:not(:last-child){
+  border-bottom: 1px solid #e8e4df;
+}
+.services__info{
+  padding: 0px;
+  flex-direction: column;
+}
+.services__title{
+  padding-left: 0;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.2;
+}
+.services__text {
+  padding-left: 0;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 1.2;
+}
+.services__title--support::before,
+.services__title--delivery::before,
+.services__title--payment::before{
+  display: none;
+}
+.new-products__content{
+  width: 50%;
+}
+.new-products__title{
+  font-size: 18px;
+}
+.new-products__text{
+  font-size: 12px;
+}
+.new-design__content{
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+}
+.featured__items{
+  padding: 0;
+}
+.new-products__img{
+  width: 28%;
+}
+.new-products__item{
+  padding: 85px 150px 85px 70px;
+}
+.button--light{
+  font-size: 10px;
+}
+.button{
+  padding: 10px 10px 10px 15px;
+}
 .menu {
     order: 1;
     margin-left: 40px;
@@ -2416,11 +2469,36 @@ border-radius: 0 50px 0 0;
   text-align: center;
   width: 220px;
 }
-
 }
 
 
+
+
 @media(max-width:576px) {
+.new-products__item {
+  align-items: center;
+  height: auto;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 60px;
+  }
+.blog-card__category{
+  display: none;
+}
+.new-design__content{
+  margin: 0 auto;
+}
+  .button--light {
+      font-size: 8px;
+    }
+ 
+  .featured__items{
+    margin-left: auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .services__inner{
+    display: block;
+  }
   .user-nav__btn--search{
     margin-right: auto;
   }
