@@ -2016,7 +2016,6 @@ border-radius: 0 50px 0 0;
   left: 186px;
   color: $title;
   bottom: 0;
-  top: -37px;
 }
 .experience__title {
   font-size: 36px;
@@ -2267,10 +2266,19 @@ border-radius: 0 50px 0 0;
  .blog-page__img {
    display: flex;
  }
+ .contact__list{
+  flex-wrap: wrap;
+ }
+ .contact__item{
+  margin: 30px;
+ }
     
 }
 
 @media(max-width:992px){
+ .contact-form {
+   flex-wrap: wrap;
+   }
   .blog-page__inner{
     flex-direction: column;
   }
@@ -2306,6 +2314,30 @@ border-radius: 0 50px 0 0;
   }
 }
 @media(max-width:768px){
+  .contact__title{
+    display: flex;
+  }
+    .contact__text {
+      display: flex;
+    }
+  .contact__list {
+    flex-direction: column;
+    }
+  
+  
+  .leave-comments__input--name{
+    width: auto;
+    margin-right: 0;
+  }
+    .leave-comments__input--mail {
+      width: auto;
+    }
+  .leave-comments__input--comment{
+    width: auto;
+  }
+  .leave-comments{
+    flex-direction: column;
+  }
   .blog-box{
     bottom: 308px;
   }
@@ -2490,6 +2522,25 @@ border-radius: 0 50px 0 0;
 
 
 @media(max-width:576px) {
+.leave-comments__input--name {
+    width: 40%;
+    margin-right: 0;
+  }
+ .leave-comments__input--mail {
+   width: 40%;
+   margin-right: 0;
+ }
+  .leave-comments__input--comment {
+    width: 40%;
+    margin-right: 0;
+  }
+  .contact-form{
+    flex-direction: column;
+  }
+    .contact__map{
+      display: flex;
+      margin-left: 0;
+    }
 .blog-box{
   display: none;
 }
